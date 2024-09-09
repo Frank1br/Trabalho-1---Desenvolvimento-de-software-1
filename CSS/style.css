@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f3f3f3;
+    
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+#logo-start{
+    width: 100px;
+    clip: auto;
+    clear: both;
+    float: left;
+}
+
+#wpp{
+    padding-right: 10px;
+
+}
+
+#wpp-icon{
+    width: 20px;
+    margin: 1px;
+}
+#question-icon{
+    width: 20px;
+    margin: 1px;
+}
+
+.free-shipping{
+    font-size: 20px;
+}
+
+.contact-info {
+    font-size: 25px;
+    float: right;
+}
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+.contact-info a:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden; /* Para conter os elementos flutuantes */
+    background-color: #f3f3f3;
+    
+}
+
+.logo {
+    float: left; /* Alinha o logo à esquerda */
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.search-bar {
+    float: right; /* Alinha a barra de pesquisa à esquerda, ao lado do logo */
+    margin-right: 10px;
+    padding-top: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 10px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.phone {
+    float: right; /* Alinha à direita */
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px ; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    margin-right: 10px;
+    display: block; /* Faz o elemento se comportar como bloco */
+    width: auto; /* Ajusta a largura automaticamente ao conteúdo */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    margin-top: 20px; /* Adiciona espaço acima da div */
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+nav.menu {
+    background-color: #a6a6a6;
+    padding: 10px;
+}
+
+nav.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav.menu ul li a:hover {
+    color: #333;
+    text-decoration: none;
+    padding: 45px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 70vh;
+    text-align: center;
+    padding-top: 200px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.text p {
+    font-size: 33px;
+}
+
+.text button {
+    font-size: 20px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.text button:hover {
+    font-size: 20px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.info-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#truck{
+    width: 80px;
+}
+
+#pin{
+    width: 80px;
+}
+
+#card{
+    width: 80px;
+}
+
+#security{
+    width: 80px;    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Mobile (menores que 600px) */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 18px;
+        text-align: center;
+        float: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .phone {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .text {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .text button {
+        width: 80%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-cards .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablets (entre 600px e 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .logo {
+        font-size: 20px;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+    }
+
+    .menu ul li {
+        margin: 5px 10px;
+    }
+
+    .text {
+        width: 70%;
+        padding: 30px;
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .text button {
+        width: 50%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .info-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info-cards .card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/* Desktops (a partir de 900px) */
+@media (min-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .menu ul {
+        justify-content: space-between;
+    }
+
+    .text {
+        width: 60%;
+        padding: 50px;
+    }
+
+    .text button {
+        width: 30%;
+    }
+
+    .info-cards .card {
+        width: 23%;
+    }
+}
+
