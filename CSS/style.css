@@ -108,6 +108,7 @@ header {
     padding: 20px ; /* Espaçamento interno */
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 16px;
+    font-weight: bold;
     margin-right: 10px;
     display: block; /* Faz o elemento se comportar como bloco */
     width: auto; /* Ajusta a largura automaticamente ao conteúdo */
@@ -202,9 +203,10 @@ nav.menu ul li a:hover {
 }
 
 
-.hero-text h1 {
+.hero-text p {
     font-size: 48px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .hero-text button {
@@ -255,6 +257,151 @@ footer {
     background-color: #f3f3f3;
     color: #333;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+    
+    /* Top Bar */
+    .top-bar {
+        width: 100%;
+        flex-direction: column; /* Coloca os elementos da barra superior em coluna */
+        align-items: center;    /* Centraliza o conteúdo */
+    }
+
+    .free-shipping {
+        font-size: 10px;
+        text-align: center; /* Centraliza o texto */
+        padding: 5px 0;     /* Ajusta o padding */
+    }
+
+    .contact-info {
+        font-size: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centraliza os links */
+        padding: 5px 0;
+    }
+
+    /* Ícones e Links da Top Bar */
+    #wpp-icon, #question-icon {
+        width: 12px; /* Ajusta o tamanho dos ícones */
+    }
+
+    #wpp, #question {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    /* Header e Logo */
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo no mobile */
+    }
+
+    #logo-start {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .phone {
+        font-size: 10px;
+        padding: 10px;
+        margin-top: 5px;
+        width: auto;
+    }
+
+    /* Barra de Pesquisa */
+    .search-bar {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center; /* Centraliza os elementos */
+    }
+
+    .search-bar input {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .search-bar button {
+        width: 60px;
+        padding: 8px;
+        margin-left: 5px;
+    }
+
+    /* Menu de Navegação */
+    nav.menu ul {
+        flex-direction: column; /* Muda o menu para coluna */
+        align-items: center;    /* Centraliza os links */
+    }
+
+    nav.menu ul li a {
+        font-size: 12px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center; /* Centraliza o texto nos links */
+    }
+
+    /* Hero Section */
+    .hero {
+        width: 100%;
+    }
+
+    .background-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        display: none; /* Oculta o texto grande para dispositivos menores */
+    }
+
+    .text2 {
+        width: 90%;
+        padding: 20px;
+        background-color: #009688;
+        display: block; /* Exibe a segunda caixa de texto no mobile */
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .text2 p {
+        font-size: 20px;
+    }
+
+    .text2 button {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    /* Info Cards */
+    .info-cards {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-cards .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #truck, #pin, #card, #security {
+        width: 60px; /* Reduz o tamanho dos ícones */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 
 
